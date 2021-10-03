@@ -1,0 +1,15 @@
+package model;
+
+
+public enum RestaurantType {
+	
+	FINE_DINING,
+	CASUAL_DINING,
+	FAMILY_STYLE,
+	FAST_CASUAL,
+	FAST_FOOD,
+	CAFFE,
+	FOOD_TRUCKS,
+	BISTRO
+	
+}

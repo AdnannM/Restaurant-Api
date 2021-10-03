@@ -1,0 +1,10 @@
+package com.adnannmuratovic;
+
+import antlr.collections.List;
+
+public interface RestaurantService {
+
+	List <RestaurantDTO> getAllRestaurant();
+
+
+}

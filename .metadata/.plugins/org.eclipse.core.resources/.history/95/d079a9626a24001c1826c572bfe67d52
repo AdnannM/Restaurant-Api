@@ -1,0 +1,13 @@
+package com.adnannmuratovic;
+
+import antlr.collections.List;
+
+import java.util.ArrayList;
+import java.awt.List;
+import java.util.List;
+
+public interface RestaurantService {
+
+	List<RestaurantDTO> getAllRestaurant();
+
+}
