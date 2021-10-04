@@ -2,7 +2,10 @@ package com.adnannmuratovic;
 
 import java.util.Objects;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -11,14 +14,28 @@ import javax.persistence.Table;
 public class Restaurant {
 
 	@Id
+	@Column(name = "id")
 	private Integer id;
+	@Column(name = "restaurantName")
 	private String restaurantName;
+	@Column(name = "address")
 	private String address;
+	@Column(name = "phoneNumber")
 	private String phoneNumber;
+	@Column(name = "lat")
 	private double lat;
+	@Column(name = "log")
 	private double log;
+	@Column(name = "restaurantImageURL")
 	private String restaurantImageURL;
+	@Column(name = "webSite")
+	private String webSite;
+	private String type;
+
 	
+	@Enumerated(EnumType.STRING)
+	
+	@Column(name = "restaurant_type")
 	private RestaurantType restaurantType;
 	
 	public RestaurantType getRestaurantType() {
@@ -73,15 +90,33 @@ public class Restaurant {
 	public void setRestaurantImageURL(String restaurantImageURL) {
 		this.restaurantImageURL = restaurantImageURL;
 	}
+	
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getWebSite() {
+		return webSite;
+	}
+
+	public void setWebSite(String webSite) {
+		this.webSite = webSite;
+	}
+	
 	@Override
 	public String toString() {
 		return "Restaurant [id=" + id + ", restaurantName=" + restaurantName + ", address=" + address + ", phoneNumber="
 				+ phoneNumber + ", lat=" + lat + ", log=" + log + ", restaurantImageURL=" + restaurantImageURL
-				+ ", restaurantType=" + restaurantType + "]";
+				+ ", webSite=" + webSite + ", type=" + type + ", restaurantType=" + restaurantType + "]";
 	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(address, id, lat, log, phoneNumber, restaurantImageURL, restaurantName, restaurantType);
+		return Objects.hash(address, id, lat, log, phoneNumber, restaurantImageURL, restaurantName, restaurantType,
+				type, webSite);
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -97,7 +132,8 @@ public class Restaurant {
 				&& Double.doubleToLongBits(log) == Double.doubleToLongBits(other.log)
 				&& Objects.equals(phoneNumber, other.phoneNumber)
 				&& Objects.equals(restaurantImageURL, other.restaurantImageURL)
-				&& Objects.equals(restaurantName, other.restaurantName) && restaurantType == other.restaurantType;
+				&& Objects.equals(restaurantName, other.restaurantName) && restaurantType == other.restaurantType
+				&& Objects.equals(type, other.type) && Objects.equals(webSite, other.webSite);
 	}
 	
 	

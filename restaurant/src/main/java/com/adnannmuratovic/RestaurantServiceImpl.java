@@ -29,6 +29,8 @@ public class RestaurantServiceImpl<RetaurantDTO> implements RestaurantService {
 			  newRestaurantDTO.setLog(restaurant.getLog());
 			  newRestaurantDTO.setPhoneNumber(restaurant.getPhoneNumber());
 			  newRestaurantDTO.setRestaurantImageURL(restaurant.getRestaurantImageURL());
+			  newRestaurantDTO.setType(restaurant.getType());
+			  newRestaurantDTO.setWebSite(restaurant.getWebSite());
 			  resultList.add((RestaurantDTO) newRestaurantDTO);
 		  }
 		  

@@ -18,8 +18,8 @@ public class RestaurantController {
 	@Autowired
 	private RestaurantService empService;
 
-	@GetMapping("/employees")
-	public ResponseEntity<List<RestaurantDTO>> getAllEmployees() {
+	@GetMapping("/restaurants")
+	public ResponseEntity<List<RestaurantDTO>> getAllRestaurants() {
 		List<RestaurantDTO> employees = empService.getAllRestaurant();
 		return new ResponseEntity<List<RestaurantDTO>>(employees, HttpStatus.OK);
 	}
