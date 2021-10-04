@@ -2,9 +2,12 @@ package com.adnannmuratovic;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+
 
 @Service
 public class RestaurantServiceImpl<RetaurantDTO> implements RestaurantService {
@@ -36,4 +39,33 @@ public class RestaurantServiceImpl<RetaurantDTO> implements RestaurantService {
 		  
 		  return resultList;
 	  }
+
+
+	@Override
+	public Optional<Restaurant> updateRestaurant(Integer id, Restaurant restaurant) {
+		Optional<Restaurant> newRestaurant = restaurantRepository.findById(id);
+		newRestaurant.get().setRestaurantName(restaurant.getRestaurantName());
+		newRestaurant.get().setAddress(restaurant.getAddress());
+		newRestaurant.get().setLat(restaurant.getLat());
+		newRestaurant.get().setLog(restaurant.getLog());
+		newRestaurant.get().setPhoneNumber(restaurant.getPhoneNumber());
+		newRestaurant.get().setRestaurantImageURL(restaurant.getRestaurantImageURL());
+		newRestaurant.get().setType(restaurant.getType());
+		newRestaurant.get().setWebSite(restaurant.getWebSite());
+		restaurantRepository.save(newRestaurant.get());
+		
+		return newRestaurant;
+	}
+
+	@Override
+	public void deleteRestaurant(Integer id)  {
+		 if (restaurantRepository.getById(id).getId().equals(id)){
+			 restaurantRepository.deleteById(id);
+	        } 
+	    }
+
+	@Override
+	public RestaurantDTO getRestaurantWithName(String restaurantName) {
+		return restaurantRepository.getRestaurantWithName(restaurantName);
+	}		  
 }

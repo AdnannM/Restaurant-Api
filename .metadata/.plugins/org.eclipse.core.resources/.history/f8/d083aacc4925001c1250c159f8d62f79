@@ -1,0 +1,17 @@
+package com.adnannmuratovic;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface RestaurantService {
+
+	List <RestaurantDTO> getAllRestaurant();
+	
+//	MessageResponse createRestaurant(RestaurantDTO restaurantDto);
+	Optional <Restaurant> updateRestaurant(Integer id, RestaurantDTO restaurant);
+	void deleteRestaurant(Integer id);
+	RestaurantDTO getRestaurantWithName(String restaurantName);
+
+	Optional<Restaurant> updateRestaurant(Integer id, Restaurant restaurant);
+
+}

@@ -74,6 +74,5 @@ public class RestaurantDTO {
 				+ restaurantImageURL + ", webSite=" + webSite + ", type=" + type + "]";
 	}
 	
-	
 
 }
