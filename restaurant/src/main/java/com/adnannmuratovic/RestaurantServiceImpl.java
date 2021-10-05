@@ -1,19 +1,22 @@
 package com.adnannmuratovic;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
-
 @Service
-public class RestaurantServiceImpl<RetaurantDTO> implements RestaurantService {
+public class RestaurantServiceImpl implements RestaurantService {
 	
 	  @Autowired
 	  private RestaurantRepository restaurantRepository;
+	  
+	  Map<String, Restaurant> newRestaurant;
 	  
 	  public List<RestaurantDTO> getAllRestaurant() {
 		  List<Restaurant> empListDB = restaurantRepository.findAll();
@@ -40,32 +43,83 @@ public class RestaurantServiceImpl<RetaurantDTO> implements RestaurantService {
 		  return resultList;
 	  }
 
-
 	@Override
-	public Optional<Restaurant> updateRestaurant(Integer id, Restaurant restaurant) {
-		Optional<Restaurant> newRestaurant = restaurantRepository.findById(id);
-		newRestaurant.get().setRestaurantName(restaurant.getRestaurantName());
-		newRestaurant.get().setAddress(restaurant.getAddress());
-		newRestaurant.get().setLat(restaurant.getLat());
-		newRestaurant.get().setLog(restaurant.getLog());
-		newRestaurant.get().setPhoneNumber(restaurant.getPhoneNumber());
-		newRestaurant.get().setRestaurantImageURL(restaurant.getRestaurantImageURL());
-		newRestaurant.get().setType(restaurant.getType());
-		newRestaurant.get().setWebSite(restaurant.getWebSite());
-		restaurantRepository.save(newRestaurant.get());
+	public void deleteRestaurant(Integer id) {
+		if (restaurantRepository.getById(id).getId().equals(id)){
+			 restaurantRepository.deleteById(id);
+        } 
 		
-		return newRestaurant;
+	}
+	
+	@Override
+	public Collection<Restaurant> getRestaurant() {
+		return restaurant.values();
+	}
+	
+	Map<String, Restaurant> restaurant;
+	
+	@Override
+	public RestaurantDTO createRestaurant(Restaurant restaurant) {
+		Restaurant createRestaurant = new Restaurant();
+		
+		createRestaurant.setRestaurantName(restaurant.getRestaurantName());
+		createRestaurant.setAddress(restaurant.getAddress());
+		createRestaurant.setLat(restaurant.getLat());
+		createRestaurant.setLog(restaurant.getLog());
+		createRestaurant.setPhoneNumber(restaurant.getPhoneNumber());
+		createRestaurant.setRestaurantImageURL(restaurant.getRestaurantImageURL());
+		createRestaurant.setType(restaurant.getType());
+		createRestaurant.setWebSite(restaurant.getWebSite());
+		
+		Restaurant savedRest = restaurantRepository.save(createRestaurant);
+		
+		RestaurantDTO dto = new RestaurantDTO();
+		dto.setAddress(savedRest.getAddress());
+		dto.setRestaurantName(savedRest.getRestaurantName());
+		dto.setRestaurantImageURL(savedRest.getRestaurantImageURL());
+		dto.setPhoneNumber(savedRest.getPhoneNumber());
+		dto.setLat(savedRest.getLat());
+		dto.setLog(savedRest.getLog());
+		dto.setType(savedRest.getType());
+		dto.setWebSite(savedRest.getWebSite());
+		dto.setId(savedRest.getId());
+		return dto;
+	}
+	
+	@Override
+	public Restaurant getRestaurant(String id) {
+		return newRestaurant.get(id);
 	}
 
 	@Override
-	public void deleteRestaurant(Integer id)  {
-		 if (restaurantRepository.getById(id).getId().equals(id)){
-			 restaurantRepository.deleteById(id);
-	        } 
-	    }
-
-	@Override
-	public RestaurantDTO getRestaurantWithName(String restaurantName) {
-		return restaurantRepository.getRestaurantWithName(restaurantName);
-	}		  
+	public RestaurantDTO updateRestaurant(Integer id, RestaurantDTO restaurant) {
+		
+		
+		
+		Optional<Restaurant> restaurantFromBaseResult = restaurantRepository.findById(id);
+		
+		Restaurant restaurantFromBase = restaurantFromBaseResult.get();
+		
+		restaurantFromBase.setRestaurantName(restaurant.getRestaurantName());
+		restaurantFromBase.setRestaurantImageURL(restaurant.getRestaurantImageURL());
+		restaurantFromBase.setAddress(restaurant.getAddress());
+		restaurantFromBase.setPhoneNumber(restaurant.getPhoneNumber());
+		restaurantFromBase.setLat(restaurant.getLat());
+		restaurantFromBase.setLog(restaurant.getLog());
+		restaurantFromBase.setType(restaurant.getType());
+	    
+		Restaurant savedRest = restaurantRepository.save(restaurantFromBase);
+		
+		RestaurantDTO dto = new RestaurantDTO();
+		dto.setAddress(savedRest.getAddress());
+		dto.setRestaurantName(savedRest.getRestaurantName());
+		dto.setRestaurantImageURL(savedRest.getRestaurantImageURL());
+		dto.setPhoneNumber(savedRest.getPhoneNumber());
+		dto.setLat(savedRest.getLat());
+		dto.setLog(savedRest.getLog());
+		dto.setType(savedRest.getType());
+		dto.setWebSite(savedRest.getWebSite());
+		dto.setId(savedRest.getId());
+		return dto;
+	}
 }

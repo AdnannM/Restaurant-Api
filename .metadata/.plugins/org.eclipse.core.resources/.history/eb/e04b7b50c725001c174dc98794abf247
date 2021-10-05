@@ -1,0 +1,20 @@
+package com.adnannmuratovic;
+
+import java.util.UUID;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+public interface RestaurantRepository extends JpaRepository<Restaurant, Integer>{
+
+	Restaurant save(RestaurantDTO restaurant);
+
+	@Query(value = "select * from restaurant where restaurant_name = :restaurantName ", nativeQuery = true)
+	Restaurant getRestaurantWithName(String restaurantName);
+
+
+	void deleteEmployee(Integer id);
+
+	UUID save(Integer id);
+
+}

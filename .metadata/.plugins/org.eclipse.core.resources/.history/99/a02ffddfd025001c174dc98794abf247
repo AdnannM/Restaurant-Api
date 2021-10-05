@@ -1,0 +1,123 @@
+package com.adnannmuratovic;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+
+
+
+
+
+@Service
+public class RestaurantServiceImpl implements RestaurantService {
+	
+	  @Autowired
+	  private RestaurantRepository restaurantRepository;
+	  
+	  
+	  Map<String, Restaurant> restaurant;
+	  
+	  public List<RestaurantDTO> getAllRestaurant() {
+		  List<Restaurant> empListDB = restaurantRepository.findAll();
+		  List<RestaurantDTO> resultList = new ArrayList<RestaurantDTO>();
+		  
+		  if(empListDB.isEmpty()) {
+			 return resultList;
+		  }
+		  
+		  for (Restaurant restaurant : empListDB) {
+			  RestaurantDTO newRestaurantDTO = new RestaurantDTO();
+			  newRestaurantDTO.setId(restaurant.getId());
+			  newRestaurantDTO.setRestaurantName(restaurant.getRestaurantName());
+			  newRestaurantDTO.setAddress(restaurant.getAddress());
+			  newRestaurantDTO.setLat(restaurant.getLat());
+			  newRestaurantDTO.setLog(restaurant.getLog());
+			  newRestaurantDTO.setPhoneNumber(restaurant.getPhoneNumber());
+			  newRestaurantDTO.setRestaurantImageURL(restaurant.getRestaurantImageURL());
+			  newRestaurantDTO.setType(restaurant.getType());
+			  newRestaurantDTO.setWebSite(restaurant.getWebSite());
+			  resultList.add((RestaurantDTO) newRestaurantDTO);
+		  }
+		  
+		  return resultList;
+	  }
+
+	@Override
+	public void deleteRestaurant(Integer id) {
+		if (restaurantRepository.getById(id).getId().equals(id)){
+			 restaurantRepository.deleteById(id);
+        } 
+		
+	}
+	
+//
+//	 @Override
+//	  public ResponseEntity<Restaurant> createRestaurant(@RequestBody Restaurant restaurant) {
+//	    try {
+//	      Restaurant _restaurant = restaurantRepository
+//	          .save(new Restaurant());
+//	      return new ResponseEntity<>(_restaurant, HttpStatus.CREATED);
+//	    } catch (Exception e) {
+//	      return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+//	    }
+//	  }
+//
+//
+//
+//	 @Override
+//	  public Restaurant updateRestaurant(@PathVariable("id") long id, @RequestBody RestaurantDTO restaurant) {
+//	    Optional<Restaurant> newRestaurant = restaurantRepository.findById((int) id);
+//
+//	    if (newRestaurant.isPresent()) {
+//	       Restaurant _restaurant = newRestaurant.get();
+//	      _restaurant.setRestaurantName(restaurant.getRestaurantName());
+//	      _restaurant.setRestaurantImageURL(restaurant.getRestaurantImageURL());
+//	      _restaurant.setPhoneNumber(restaurant.getPhoneNumber());
+//	      _restaurant.setAddress(restaurant.getAddress());
+//	      _restaurant.setWebSite(restaurant.getWebSite());
+//	      _restaurant.setLat(restaurant.getLat());
+//	      _restaurant.setLog(restaurant.getLog());
+//	      _restaurant.setId(restaurant.getId());
+//	      return restaurantRepository.save(_restaurant);
+//	    } else {
+//	      return null;
+//	    }
+//	  }
+
+	@Override
+	public Collection<Restaurant> getRestaurant() {
+		return restaurant.values();
+	}
+	
+	
+	
+	@Override
+	public Restaurant createNewRestaurant(Restaurant restaurant) {
+		Restaurant createRestaurant = new Restaurant();
+		createRestaurant.setId(restaurant.getId());
+		createRestaurant.setRestaurantName(restaurant.getRestaurantName());
+		createRestaurant.setAddress(restaurant.getAddress());
+		createRestaurant.setLat(restaurant.getLat());
+		createRestaurant.setLog(restaurant.getLog());
+		createRestaurant.setPhoneNumber(restaurant.getPhoneNumber());
+		createRestaurant.setRestaurantImageURL(restaurant.getRestaurantImageURL());
+		createRestaurant.setType(restaurant.getType());
+		createRestaurant.setWebSite(restaurant.getWebSite());
+		
+		if (restaurant == null) {
+			restaurant = new HashMap<>();
+		}
+	}	  
+}

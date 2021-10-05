@@ -134,7 +134,5 @@ public class Restaurant {
 				&& Objects.equals(restaurantImageURL, other.restaurantImageURL)
 				&& Objects.equals(restaurantName, other.restaurantName) && restaurantType == other.restaurantType
 				&& Objects.equals(type, other.type) && Objects.equals(webSite, other.webSite);
-	}
-	
-	
+	}	
 }

@@ -15,5 +15,4 @@ public final class MessageResponse {
 	public String getMessage() {
 		return message;
 	}
-	
 }

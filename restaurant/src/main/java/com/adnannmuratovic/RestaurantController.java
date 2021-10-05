@@ -1,14 +1,11 @@
 package com.adnannmuratovic;
 
+import java.util.Collection;
 import java.util.List;
-import java.util.Optional;
-
-import javax.websocket.server.PathParam;
-
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,7 +23,20 @@ public class RestaurantController {
 
 	@Autowired
 	private RestaurantService empService;
-	RestaurantRepository restaurantRepository;
+
+	
+	@GetMapping
+	public ResponseEntity<Collection<Restaurant>> getRestaurant() {
+		
+		return new ResponseEntity<>(empService.getRestaurant(), HttpStatus.OK);
+	}
+	
+	
+	@PostMapping("/restaurants")
+	public ResponseEntity<RestaurantDTO> createUser(@Valid @RequestBody Restaurant restaurant) {
+		return new ResponseEntity<>(empService.createRestaurant(restaurant), HttpStatus.OK);
+	}
+
 
 	@GetMapping("/restaurants")
 	public ResponseEntity<List<RestaurantDTO>> getAllRestaurants() {
@@ -34,15 +44,11 @@ public class RestaurantController {
 		return new ResponseEntity<List<RestaurantDTO>>(restaurant, HttpStatus.OK);
 	}
 	
-	 @PutMapping("/update/{id}")
-	    public ResponseEntity<MessageResponse> updateEmployee( @PathVariable Integer id, @RequestBody RestaurantDTO restaurant) {
-	        MessageResponse updateRestaurant = restaurantRepository.updateRestaurant(id, restaurant);
-	        return new ResponseEntity<>(updateRestaurant, HttpStatus.OK);
-	    }
-	 
-	 @DeleteMapping("/delete/{id}")
-	    public ResponseEntity<?> deleteEmployee(@PathVariable("id") Integer id) {
-		 restaurantRepository.deleteEmployee(id);
-	        return new ResponseEntity<>(HttpStatus.OK);
-	    }
+
+	@PutMapping("/restaurant/{id}")
+	public ResponseEntity<RestaurantDTO> updateUser(@PathVariable Integer id, @Valid @RequestBody RestaurantDTO restaurant) {
+		return new ResponseEntity<>(empService.updateRestaurant(id, restaurant), HttpStatus.OK);
+	}
 }
+
+

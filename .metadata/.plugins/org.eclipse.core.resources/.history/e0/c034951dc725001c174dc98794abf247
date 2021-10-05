@@ -1,0 +1,17 @@
+package com.adnannmuratovic;
+
+import java.util.UUID;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface RestaurantRepository extends JpaRepository<Restaurant, Integer>{
+
+	Restaurant save(RestaurantDTO restaurant);
+
+	RestaurantDTO getRestaurantWithName(String restaurantName);
+
+	void deleteEmployee(Integer id);
+
+	UUID save(Integer id);
+
+}

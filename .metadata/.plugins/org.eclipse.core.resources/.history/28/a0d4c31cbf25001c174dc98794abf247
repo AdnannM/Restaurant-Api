@@ -1,0 +1,75 @@
+package com.adnannmuratovic;
+
+import java.util.List;
+import java.util.Optional;
+
+import javax.websocket.server.PathParam;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+
+
+
+@RestController
+@RequestMapping("/api")
+public class RestaurantController {
+
+	@Autowired
+	private RestaurantService empService;
+	RestaurantRepository restaurantRepository;
+
+	@GetMapping("/restaurants")
+	public ResponseEntity<List<RestaurantDTO>> getAllRestaurants() {
+		List<RestaurantDTO> restaurant = empService.getAllRestaurant();
+		return new ResponseEntity<List<RestaurantDTO>>(restaurant, HttpStatus.OK);
+	}
+	
+	@Override
+	public void deleteRestaurant(Integer id)  {
+		 if (restaurantRepository.getById(id).getId().equals(id)){
+			 restaurantRepository.deleteById(id);
+	        } 
+	    }
+
+	@PostMapping("/restaurants")
+	  public ResponseEntity<Restaurant> createRestaurant(@RequestBody Restaurant restaurant) {
+	    try {
+	      Restaurant _restaurant = restaurantRepository
+	          .save(new Restaurant());
+	      return new ResponseEntity<>(_restaurant, HttpStatus.CREATED);
+	    } catch (Exception e) {
+	      return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+	    }
+	  }
+
+
+	 @PutMapping("/restaurants/{id}")
+	  public Restaurant updateRestaurant(@PathVariable("id") long id, @RequestBody RestaurantDTO restaurant) {
+	    Optional<Restaurant> newRestaurant = restaurantRepository.findById((int) id);
+
+	    if (newRestaurant.isPresent()) {
+	      Restaurant _restaurant = newRestaurant.get();
+	      _restaurant.setRestaurantName(restaurant.getRestaurantName());
+	      _restaurant.setRestaurantImageURL(restaurant.getRestaurantImageURL());
+	      _restaurant.setPhoneNumber(restaurant.getPhoneNumber());
+	      _restaurant.setAddress(restaurant.getAddress());
+	      _restaurant.setWebSite(restaurant.getWebSite());
+	      _restaurant.setLat(restaurant.getLat());
+	      _restaurant.setLog(restaurant.getLog());
+	      _restaurant.setId(restaurant.getId());
+	      return restaurantRepository.save(_restaurant);
+	    } else {
+	      return null;
+	    }
+	  }
+}
