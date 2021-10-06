@@ -45,7 +45,15 @@ public class RestaurantServiceImpl implements RestaurantService {
 
 	@Override
 	public void deleteRestaurant(Integer id) {
+		
 		if (restaurantRepository.getById(id).getId().equals(id)){
+			boolean exist = restaurantRepository.existsById(id);
+			
+			if (!exist) {
+				throw new IllegalStateException(
+						"Restaurant with id " + id + " does not exist"
+				);
+			}
 			 restaurantRepository.deleteById(id);
         } 
 		
@@ -74,6 +82,15 @@ public class RestaurantServiceImpl implements RestaurantService {
 		Restaurant savedRest = restaurantRepository.save(createRestaurant);
 		
 		RestaurantDTO dto = new RestaurantDTO();
+		
+		Optional<Restaurant> restaurantByName = restaurantRepository.getRestaurantWithName(restaurant.getRestaurantName());
+		
+		if(restaurantByName.isPresent()) {
+			throw new IllegalStateException(
+					"Restaurant name " + restaurantByName + " not Found"
+			);
+		}
+		
 		dto.setAddress(savedRest.getAddress());
 		dto.setRestaurantName(savedRest.getRestaurantName());
 		dto.setRestaurantImageURL(savedRest.getRestaurantImageURL());
@@ -93,8 +110,6 @@ public class RestaurantServiceImpl implements RestaurantService {
 
 	@Override
 	public RestaurantDTO updateRestaurant(Integer id, RestaurantDTO restaurant) {
-		
-		
 		
 		Optional<Restaurant> restaurantFromBaseResult = restaurantRepository.findById(id);
 		

@@ -3,8 +3,6 @@ package com.adnannmuratovic;
 import java.util.Collection;
 import java.util.List;
 
-import javax.validation.Valid;
-
 
 public interface RestaurantService {
 
