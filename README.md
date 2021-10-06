@@ -7,4 +7,5 @@
  - How to map classes to tables
  - Hibernate Entity Life Cycle
  - Queries
+ - Get, Post, Put and Delete
 
