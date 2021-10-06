@@ -10,21 +10,22 @@ public class RestaurantDTO {
 	private double log;
 	private String restaurantImageURL;
 	private String webSite;
-	private String type;
+	private RestaurantTypeDTO type;
 	
 	
+	public RestaurantTypeDTO getType() {
+		return type;
+	}
+	public void setType(RestaurantTypeDTO type) {
+		this.type = type;
+	}
 	public String getWebSite() {
 		return webSite;
 	}
 	public void setWebSite(String webSite) {
 		this.webSite = webSite;
 	}
-	public String getType() {
-		return type;
-	}
-	public void setType(String type) {
-		this.type = type;
-	}
+	
 	public Integer getId() {
 		return id;
 	}
@@ -71,7 +72,7 @@ public class RestaurantDTO {
 	public String toString() {
 		return "RestaurantDTO [id=" + id + ", restaurantName=" + restaurantName + ", address=" + address
 				+ ", phoneNumber=" + phoneNumber + ", lat=" + lat + ", log=" + log + ", restaurantImageURL="
-				+ restaurantImageURL + ", webSite=" + webSite + ", type=" + type + "]";
+				+ restaurantImageURL + ", webSite=" + webSite + "]";
 	}
 	
 

@@ -35,8 +35,17 @@ public class RestaurantServiceImpl implements RestaurantService {
 			  newRestaurantDTO.setLog(restaurant.getLog());
 			  newRestaurantDTO.setPhoneNumber(restaurant.getPhoneNumber());
 			  newRestaurantDTO.setRestaurantImageURL(restaurant.getRestaurantImageURL());
-			  newRestaurantDTO.setType(restaurant.getType());
 			  newRestaurantDTO.setWebSite(restaurant.getWebSite());
+			  
+			  if(restaurant.getType() != null ){
+				  RestaurantTypeDTO typeDTO = new RestaurantTypeDTO();
+				  typeDTO.setId(restaurant.getType().getId());
+				  typeDTO.setType(restaurant.getType().getType());
+				  newRestaurantDTO.setType(typeDTO);
+					
+				}
+			  
+			  
 			  resultList.add((RestaurantDTO) newRestaurantDTO);
 		  }
 		  
@@ -76,7 +85,6 @@ public class RestaurantServiceImpl implements RestaurantService {
 		createRestaurant.setLog(restaurant.getLog());
 		createRestaurant.setPhoneNumber(restaurant.getPhoneNumber());
 		createRestaurant.setRestaurantImageURL(restaurant.getRestaurantImageURL());
-		createRestaurant.setType(restaurant.getType());
 		createRestaurant.setWebSite(restaurant.getWebSite());
 		
 		Restaurant savedRest = restaurantRepository.save(createRestaurant);
@@ -91,15 +99,22 @@ public class RestaurantServiceImpl implements RestaurantService {
 			);
 		}
 		
+		
 		dto.setAddress(savedRest.getAddress());
 		dto.setRestaurantName(savedRest.getRestaurantName());
 		dto.setRestaurantImageURL(savedRest.getRestaurantImageURL());
 		dto.setPhoneNumber(savedRest.getPhoneNumber());
 		dto.setLat(savedRest.getLat());
 		dto.setLog(savedRest.getLog());
-		dto.setType(savedRest.getType());
 		dto.setWebSite(savedRest.getWebSite());
-		dto.setId(savedRest.getId());
+		
+		if(restaurant.getType() != null ){
+			RestaurantTypeDTO typeDTO = new RestaurantTypeDTO();
+			 typeDTO.setId(restaurant.getType().getId());
+			 dto.setType(typeDTO);
+			
+		}
+		 
 		return dto;
 	}
 	
@@ -113,7 +128,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 		
 		Optional<Restaurant> restaurantFromBaseResult = Optional.of(restaurantRepository
 				.findById(id).orElseThrow(() -> new IllegalStateException(
-						"Restaurant with id " + restaurant + " not exist"
+						"Restaurant with id " + restaurant + " not Exist"
 				)));
 
 		Restaurant restaurantFromBase = restaurantFromBaseResult.get();
@@ -124,20 +139,20 @@ public class RestaurantServiceImpl implements RestaurantService {
 		restaurantFromBase.setPhoneNumber(restaurant.getPhoneNumber());
 		restaurantFromBase.setLat(restaurant.getLat());
 		restaurantFromBase.setLog(restaurant.getLog());
-		restaurantFromBase.setType(restaurant.getType());
 	    
 		Restaurant savedRest = restaurantRepository.save(restaurantFromBase);
 		
 		RestaurantDTO dto = new RestaurantDTO();
+		
 		dto.setAddress(savedRest.getAddress());
 		dto.setRestaurantName(savedRest.getRestaurantName());
 		dto.setRestaurantImageURL(savedRest.getRestaurantImageURL());
 		dto.setPhoneNumber(savedRest.getPhoneNumber());
 		dto.setLat(savedRest.getLat());
 		dto.setLog(savedRest.getLog());
-		dto.setType(savedRest.getType());
 		dto.setWebSite(savedRest.getWebSite());
 		dto.setId(savedRest.getId());
+		
 		return dto;
 	}
 }

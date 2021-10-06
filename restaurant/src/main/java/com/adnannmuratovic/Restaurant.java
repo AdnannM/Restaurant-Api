@@ -2,11 +2,12 @@ package com.adnannmuratovic;
 
 import java.util.Objects;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -16,38 +17,37 @@ public class Restaurant {
 	@Id
 	@Column(name = "id")
 	private Integer id;
-	@Column(name = "restaurantName")
+	@Column(name = "restaurant_name")
 	private String restaurantName;
 	@Column(name = "address")
 	private String address;
-	@Column(name = "phoneNumber")
+	@Column(name = "phone_number")
 	private String phoneNumber;
 	@Column(name = "lat")
 	private double lat;
 	@Column(name = "log")
 	private double log;
-	@Column(name = "restaurantImageURL")
+	@Column(name = "restaurant_imageurl")
 	private String restaurantImageURL;
-	@Column(name = "webSite")
+	@Column(name = "web_site")
 	private String webSite;
-	private String type;
 
 	
-	@Enumerated(EnumType.STRING)
-	
-	@Column(name = "restaurant_type")
-	private RestaurantType restaurantType;
-	
-	public RestaurantType getRestaurantType() {
-		return restaurantType;
-	}
 
-	public void setRestaurantType(RestaurantType restaurantType) {
-		this.restaurantType = restaurantType;
-	}
-
+	@OneToOne
+	@JoinColumn(name = "type_id", referencedColumnName = "id")
+	private RestaurantTypeDAO type; 
+	
 	public Restaurant() {}
-	
+
+	public RestaurantTypeDAO getType() {
+		return type;
+	}
+
+	public void setType(RestaurantTypeDAO type) {
+		this.type = type;
+	}
+
 	public Integer getId() {
 		return id;
 	}
@@ -91,14 +91,6 @@ public class Restaurant {
 		this.restaurantImageURL = restaurantImageURL;
 	}
 	
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
 	public String getWebSite() {
 		return webSite;
 	}
@@ -107,16 +99,16 @@ public class Restaurant {
 		this.webSite = webSite;
 	}
 	
+
 	@Override
 	public String toString() {
 		return "Restaurant [id=" + id + ", restaurantName=" + restaurantName + ", address=" + address + ", phoneNumber="
 				+ phoneNumber + ", lat=" + lat + ", log=" + log + ", restaurantImageURL=" + restaurantImageURL
-				+ ", webSite=" + webSite + ", type=" + type + ", restaurantType=" + restaurantType + "]";
+				+ ", webSite=" + webSite + ", type=" + type + "]";
 	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(address, id, lat, log, phoneNumber, restaurantImageURL, restaurantName, restaurantType,
-				type, webSite);
+		return Objects.hash(address, id, lat, log, phoneNumber, restaurantImageURL, restaurantName, webSite);
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -132,7 +124,7 @@ public class Restaurant {
 				&& Double.doubleToLongBits(log) == Double.doubleToLongBits(other.log)
 				&& Objects.equals(phoneNumber, other.phoneNumber)
 				&& Objects.equals(restaurantImageURL, other.restaurantImageURL)
-				&& Objects.equals(restaurantName, other.restaurantName) && restaurantType == other.restaurantType
-				&& Objects.equals(type, other.type) && Objects.equals(webSite, other.webSite);
+				&& Objects.equals(restaurantName, other.restaurantName)
+			    && Objects.equals(webSite, other.webSite);
 	}	
 }
