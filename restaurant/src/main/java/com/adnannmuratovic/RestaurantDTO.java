@@ -13,9 +13,6 @@ public class RestaurantDTO {
 	private RestaurantTypeDTO type;
 	
 	
-	
-	
-	
 	public RestaurantDTO() {
 
 	}

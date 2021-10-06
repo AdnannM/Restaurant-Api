@@ -166,13 +166,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 		RestaurantTypeDAO restaurantTypeFromBase = restaurantTypeFromBaseResult.get();
 		
 		restaurantFromBase.setType(restaurantTypeFromBase);
-		
 
-		
-		
-	
-		
-		
 		// Save
 		Restaurant savedRest = restaurantRepository.save(restaurantFromBase);
 		
