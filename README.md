@@ -8,4 +8,5 @@
  - Hibernate Entity Life Cycle
  - Queries
  - Get, Post, Put and Delete
+ - 1 to 1 Connection
 
