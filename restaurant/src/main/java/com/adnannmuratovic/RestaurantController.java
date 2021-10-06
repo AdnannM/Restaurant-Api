@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
+
 
 
 
@@ -45,8 +46,8 @@ public class RestaurantController {
 	}
 	
 
-	@PutMapping("/restaurant/{id}")
-	public ResponseEntity<RestaurantDTO> updateUser(@PathVariable Integer id, @Valid @RequestBody RestaurantDTO restaurant) {
+	@PutMapping(consumes = "application/json", produces = "application/json", path = "/restaurant/{id}")
+	public ResponseEntity<RestaurantDTO> updateUser(@PathVariable Integer id, @RequestBody RestaurantDTO restaurant) {
 		return new ResponseEntity<>(empService.updateRestaurant(id, restaurant), HttpStatus.OK);
 	}
 }

@@ -1,0 +1,12 @@
+package com.adnannmuratovic;
+
+
+
+public class RestaurantTypeDTO {
+
+	private Integer id;
+	private String type;
+	
+	
+	
+}

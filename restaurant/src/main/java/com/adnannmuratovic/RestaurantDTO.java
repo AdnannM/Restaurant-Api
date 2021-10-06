@@ -13,19 +13,12 @@ public class RestaurantDTO {
 	private RestaurantTypeDTO type;
 	
 	
-	public RestaurantTypeDTO getType() {
-		return type;
-	}
-	public void setType(RestaurantTypeDTO type) {
-		this.type = type;
-	}
-	public String getWebSite() {
-		return webSite;
-	}
-	public void setWebSite(String webSite) {
-		this.webSite = webSite;
-	}
 	
+	
+	
+	public RestaurantDTO() {
+
+	}
 	public Integer getId() {
 		return id;
 	}
@@ -68,12 +61,20 @@ public class RestaurantDTO {
 	public void setRestaurantImageURL(String restaurantImageURL) {
 		this.restaurantImageURL = restaurantImageURL;
 	}
-	@Override
-	public String toString() {
-		return "RestaurantDTO [id=" + id + ", restaurantName=" + restaurantName + ", address=" + address
-				+ ", phoneNumber=" + phoneNumber + ", lat=" + lat + ", log=" + log + ", restaurantImageURL="
-				+ restaurantImageURL + ", webSite=" + webSite + "]";
+	public String getWebSite() {
+		return webSite;
 	}
+	public void setWebSite(String webSite) {
+		this.webSite = webSite;
+	}
+	public RestaurantTypeDTO getType() {
+		return type;
+	}
+	public void setType(RestaurantTypeDTO type) {
+		this.type = type;
+	}
+
+	
 	
 
 }

@@ -6,17 +6,24 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 
+@Repository("restaurantServiceImpl")
 @Service
 public class RestaurantServiceImpl implements RestaurantService {
 	
 	  @Autowired
 	  private RestaurantRepository restaurantRepository;
+	  @Autowired
+	  private RestourantTypeRepository restaurantTypeRepository;
 	  
 	  Map<String, Restaurant> newRestaurant;
+	  
 	  
 	  public List<RestaurantDTO> getAllRestaurant() {
 		  List<Restaurant> empListDB = restaurantRepository.findAll();
@@ -116,6 +123,8 @@ public class RestaurantServiceImpl implements RestaurantService {
 		}
 		 
 		return dto;
+
+		
 	}
 	
 	@Override
@@ -123,7 +132,12 @@ public class RestaurantServiceImpl implements RestaurantService {
 		return newRestaurant.get(id);
 	}
 
+//	public RestaurantTypeDTO getType(String id) {
+//		return restaurantType.get(id);
+//	}
+	
 	@Override
+	@Transactional
 	public RestaurantDTO updateRestaurant(Integer id, RestaurantDTO restaurant) {
 		
 		Optional<Restaurant> restaurantFromBaseResult = Optional.of(restaurantRepository
@@ -132,7 +146,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 				)));
 
 		Restaurant restaurantFromBase = restaurantFromBaseResult.get();
-		
+				
 		restaurantFromBase.setRestaurantName(restaurant.getRestaurantName());
 		restaurantFromBase.setRestaurantImageURL(restaurant.getRestaurantImageURL());
 		restaurantFromBase.setAddress(restaurant.getAddress());
@@ -140,8 +154,29 @@ public class RestaurantServiceImpl implements RestaurantService {
 		restaurantFromBase.setLat(restaurant.getLat());
 		restaurantFromBase.setLog(restaurant.getLog());
 	    
+		
+		// RestaurantType
+		RestaurantTypeDTO typeDTO = restaurant.getType();
+		
+		Optional<RestaurantTypeDAO> restaurantTypeFromBaseResult = Optional.of(restaurantTypeRepository
+				.findById(typeDTO.getId()).orElseThrow(() -> new IllegalStateException(
+						"Restaurant with id " + restaurant + " not Exist"
+				)));
+		
+		RestaurantTypeDAO restaurantTypeFromBase = restaurantTypeFromBaseResult.get();
+		
+		restaurantFromBase.setType(restaurantTypeFromBase);
+		
+
+		
+		
+	
+		
+		
+		// Save
 		Restaurant savedRest = restaurantRepository.save(restaurantFromBase);
 		
+		// Restaurant
 		RestaurantDTO dto = new RestaurantDTO();
 		
 		dto.setAddress(savedRest.getAddress());
@@ -153,6 +188,13 @@ public class RestaurantServiceImpl implements RestaurantService {
 		dto.setWebSite(savedRest.getWebSite());
 		dto.setId(savedRest.getId());
 		
+		
+		if(restaurant.getType() != null && restaurant.equals(dto) ){
+			RestaurantTypeDTO newTypeDTO = new RestaurantTypeDTO();
+			 typeDTO.setId(restaurant.getType().getId());
+			 dto.setType(newTypeDTO);
+		}
+
 		return dto;
 	}
 }
