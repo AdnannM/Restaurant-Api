@@ -111,8 +111,11 @@ public class RestaurantServiceImpl implements RestaurantService {
 	@Override
 	public RestaurantDTO updateRestaurant(Integer id, RestaurantDTO restaurant) {
 		
-		Optional<Restaurant> restaurantFromBaseResult = restaurantRepository.findById(id);
-		
+		Optional<Restaurant> restaurantFromBaseResult = Optional.of(restaurantRepository
+				.findById(id).orElseThrow(() -> new IllegalStateException(
+						"Restaurant with id " + restaurant + " not exist"
+				)));
+
 		Restaurant restaurantFromBase = restaurantFromBaseResult.get();
 		
 		restaurantFromBase.setRestaurantName(restaurant.getRestaurantName());
