@@ -1,0 +1,8 @@
+package com.adnannmuratovic;
+
+import java.util.List;
+
+public interface RestaurantTypeService {
+
+	List <RestaurantTypeDTO> getAllTypes();
+}

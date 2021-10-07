@@ -7,13 +7,11 @@ import java.util.Map;
 import java.util.Optional;
 
 import javax.transaction.Transactional;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 
-@Repository("restaurantServiceImpl")
+
 @Service
 public class RestaurantServiceImpl implements RestaurantService {
 	
@@ -82,7 +80,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 	
 	Map<String, Restaurant> restaurant;
 	
-	@Override
+	
 	
 	/*
 	 *  - TODO:
@@ -90,7 +88,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 	 *  	- And Save
 	 */
 	
-	
+	@Override
 	public RestaurantDTO createRestaurant(RestaurantDTO restaurant) {
 		
 		Restaurant createRestaurant = new Restaurant();
@@ -142,10 +140,6 @@ public class RestaurantServiceImpl implements RestaurantService {
 	public Restaurant getRestaurant(String id) {
 		return newRestaurant.get(id);
 	}
-
-//	public RestaurantTypeDTO getType(String id) {
-//		return restaurantType.get(id);
-//	}
 	
 	@Override
 	@Transactional

@@ -1,0 +1,37 @@
+package com.adnannmuratovic;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
+
+@Repository("restaurantTypeServiceImpl")
+@Service
+public class RestaurantTypeServiceImpl implements RestaurantTypeService {
+
+	@Autowired
+	  public RestourantTypeRepository restaurantTypeRepository;
+	
+	
+	 public List<RestaurantTypeDTO> getAllTypes() {
+		  List<RestaurantTypeDAO> empListType = restaurantTypeRepository.findAll();
+		  List<RestaurantTypeDTO> resultList = new ArrayList<RestaurantTypeDTO>();
+		  
+		  if(empListType.isEmpty()) {
+			 return resultList;
+		  }
+		  
+		  for (RestaurantTypeDAO restaurantType : empListType) {
+			  RestaurantTypeDTO newRestaurantTypeDTO = new RestaurantTypeDTO();
+			  newRestaurantTypeDTO.setId(restaurantType.getId());
+			  newRestaurantTypeDTO.setType(restaurantType.getType());
+			  
+			  resultList.add(newRestaurantTypeDTO);
+		  }
+		  
+		  return resultList;
+	 }
+}
