@@ -9,4 +9,5 @@
  - Queries
  - Get, Post, Put and Delete
  - 1 to 1 Connection
+ - 1 to 2 Connection
 
