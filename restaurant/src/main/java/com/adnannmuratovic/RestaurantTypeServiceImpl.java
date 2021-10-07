@@ -5,11 +5,10 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 
-@Repository("restaurantTypeServiceImpl")
+
 @Service
 public class RestaurantTypeServiceImpl implements RestaurantTypeService {
 
@@ -53,8 +52,9 @@ public class RestaurantTypeServiceImpl implements RestaurantTypeService {
 	 
 	 // CRREATE TYPES 
 	 public RestaurantTypeDTO createTypes(RestaurantTypeDTO types) {
+		 
 		 RestaurantTypeDAO createType = new RestaurantTypeDAO();
-		 createType.setId(types.getId());
+//		 createType.setId(types.getId());
 		 createType.setType(types.getType());
 		 
 		 RestaurantTypeDAO saveType = restaurantTypeRepository.save(createType);
@@ -75,12 +75,10 @@ public class RestaurantTypeServiceImpl implements RestaurantTypeService {
 		)));
 		 
 		 
-		 RestaurantTypeDAO  typesFromBase =  typesResultFromBase.get();
+		
+		 typesResultFromBase.get().setType(types.getType());
 		 
-		 typesFromBase.setId(types.getId());
-		 typesFromBase.setType(types.getType());
-		 
-		 RestaurantTypeDAO saveTypes = restaurantTypeRepository.save(typesFromBase);
+		 RestaurantTypeDAO saveTypes = restaurantTypeRepository.save(typesResultFromBase.get());
 		 
 		 RestaurantTypeDTO dto = new RestaurantTypeDTO();
 		 

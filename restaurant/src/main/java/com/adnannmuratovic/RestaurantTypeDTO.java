@@ -21,11 +21,5 @@ public class RestaurantTypeDTO {
 	}
 	public void setType(String type) {
 		this.type = type;
-	}
-	
-	@Override
-    public int hashCode() {
-        return id == null ? 0 : id.hashCode();
-    }
-	
+	}	
 }
