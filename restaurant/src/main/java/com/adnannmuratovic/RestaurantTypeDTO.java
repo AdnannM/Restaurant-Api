@@ -7,8 +7,6 @@ public class RestaurantTypeDTO {
 	private Integer id;
 	private String type;
 	
-	
-	
 	public RestaurantTypeDTO() {
 
 	}
@@ -25,6 +23,9 @@ public class RestaurantTypeDTO {
 		this.type = type;
 	}
 	
-	
+	@Override
+    public int hashCode() {
+        return id == null ? 0 : id.hashCode();
+    }
 	
 }

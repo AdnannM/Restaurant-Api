@@ -30,7 +30,7 @@ public class RestaurantController {
 	
 	
 	@PostMapping("/restaurants")
-	public ResponseEntity<RestaurantDTO> createUser(@Valid @RequestBody Restaurant restaurant) {
+	public ResponseEntity<RestaurantDTO> createRestaurant(@Valid @RequestBody RestaurantDTO restaurant) {
 		return new ResponseEntity<>(empService.createRestaurant(restaurant), HttpStatus.OK);
 	}
 

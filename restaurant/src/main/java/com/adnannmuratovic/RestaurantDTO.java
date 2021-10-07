@@ -14,7 +14,7 @@ public class RestaurantDTO {
 	
 	
 	public RestaurantDTO() {
-
+		
 	}
 	public Integer getId() {
 		return id;

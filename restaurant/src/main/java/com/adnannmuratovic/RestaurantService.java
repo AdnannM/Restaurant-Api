@@ -15,13 +15,14 @@ public interface RestaurantService {
 
 	Collection <Restaurant> getRestaurant();
 	
-	RestaurantDTO createRestaurant(Restaurant restaurant);
+	RestaurantDTO createRestaurant(RestaurantDTO restaurant);
 	
 	Restaurant getRestaurant(String id);
 	
 	RestaurantDTO updateRestaurant(Integer id, RestaurantDTO restaurant);
 
 	void deleteRestaurant(Integer id);
+
 
 	
 }

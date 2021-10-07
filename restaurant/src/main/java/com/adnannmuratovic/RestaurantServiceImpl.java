@@ -83,46 +83,58 @@ public class RestaurantServiceImpl implements RestaurantService {
 	Map<String, Restaurant> restaurant;
 	
 	@Override
-	public RestaurantDTO createRestaurant(Restaurant restaurant) {
+	
+	/*
+	 *  - TODO:
+	 *  	- Create New RestaurantTypeDTO
+	 *  	- And Save
+	 */
+	
+	
+	public RestaurantDTO createRestaurant(RestaurantDTO restaurant) {
+		
 		Restaurant createRestaurant = new Restaurant();
 		
+		//createRestaurant.setId(restaurant.getId());
 		createRestaurant.setRestaurantName(restaurant.getRestaurantName());
 		createRestaurant.setAddress(restaurant.getAddress());
+		createRestaurant.setRestaurantImageURL(restaurant.getRestaurantImageURL());
 		createRestaurant.setLat(restaurant.getLat());
 		createRestaurant.setLog(restaurant.getLog());
 		createRestaurant.setPhoneNumber(restaurant.getPhoneNumber());
-		createRestaurant.setRestaurantImageURL(restaurant.getRestaurantImageURL());
 		createRestaurant.setWebSite(restaurant.getWebSite());
 		
-		Restaurant savedRest = restaurantRepository.save(createRestaurant);
 		
-		RestaurantDTO dto = new RestaurantDTO();
-		
-		Optional<Restaurant> restaurantByName = restaurantRepository.getRestaurantWithName(restaurant.getRestaurantName());
-		
-		if(restaurantByName.isPresent()) {
-			throw new IllegalStateException(
-					"Restaurant name " + restaurantByName + " not Found"
-			);
-		}
+		RestaurantTypeDTO typeDTO = restaurant.getType();
 		
 		
-		dto.setAddress(savedRest.getAddress());
-		dto.setRestaurantName(savedRest.getRestaurantName());
-		dto.setRestaurantImageURL(savedRest.getRestaurantImageURL());
-		dto.setPhoneNumber(savedRest.getPhoneNumber());
-		dto.setLat(savedRest.getLat());
-		dto.setLog(savedRest.getLog());
-		dto.setWebSite(savedRest.getWebSite());
+		Optional<RestaurantTypeDAO> typeDaoResult = Optional.of(restaurantTypeRepository
+				.findById(typeDTO.getId()).orElseThrow(() -> new IllegalStateException(
+						"Restaurant Type  " + restaurant + " not Exist"
+				)));
 		
-		if(restaurant.getType() != null ){
-			RestaurantTypeDTO typeDTO = new RestaurantTypeDTO();
+		createRestaurant.setType(typeDaoResult.get());
+		
+		Restaurant saveRestaurant = restaurantRepository.save(createRestaurant);
+		
+		RestaurantDTO restaurantDTO = new RestaurantDTO();
+		restaurantDTO.setRestaurantName(saveRestaurant.getRestaurantName());
+		restaurantDTO.setAddress(saveRestaurant.getAddress());
+		restaurantDTO.setRestaurantImageURL(saveRestaurant.getRestaurantName());
+		restaurantDTO.setPhoneNumber(saveRestaurant.getPhoneNumber());
+		restaurantDTO.setLat(saveRestaurant.getLat());
+		restaurantDTO.setLog(saveRestaurant.getLog());
+		restaurantDTO.setWebSite(saveRestaurant.getWebSite());
+		restaurantDTO.setId(saveRestaurant.getId());
+		
+		
+		if(saveRestaurant.getType() != null && saveRestaurant.equals(restaurantDTO) ){
+			RestaurantTypeDTO newTypeDTO = new RestaurantTypeDTO();
 			 typeDTO.setId(restaurant.getType().getId());
-			 dto.setType(typeDTO);
-			
+			 restaurantDTO.setType(newTypeDTO);
 		}
-		 
-		return dto;
+
+		return restaurantDTO;
 
 	}
 	
@@ -152,6 +164,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 		restaurantFromBase.setPhoneNumber(restaurant.getPhoneNumber());
 		restaurantFromBase.setLat(restaurant.getLat());
 		restaurantFromBase.setLog(restaurant.getLog());
+		
 	    
 		
 		// RestaurantType

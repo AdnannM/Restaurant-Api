@@ -3051,3 +3051,348 @@ org.eclipse.core.runtime.CoreException: Launch configuration TestSpringBootMySql
 2021-10-06 14:52:36,517 [Worker-471: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-10-06 14:52:36,517 [Worker-471: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2021-10-06 14:52:36,517 [Worker-471: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 15:06:02,442 [Worker-482: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 15:06:02,450 [Worker-482: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 15:06:02,456 [Worker-482: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 15:06:02,521 [Worker-482: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 15:06:02,540 [Worker-482: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 15:06:02,540 [Worker-482: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 15:06:02,540 [Worker-482: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 15:06:08,925 [Worker-484: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 15:06:08,930 [Worker-484: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 15:06:08,936 [Worker-484: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 15:06:08,966 [Worker-484: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 15:06:08,975 [Worker-484: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 15:06:08,975 [Worker-484: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 15:06:08,975 [Worker-484: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 19:30:34,146 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-10-06 20:20:55,257 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 20:20:55,258 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 20:20:55,261 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 20:20:55,282 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 20:20:55,288 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 20:20:55,288 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 20:20:55,288 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 20:21:13,322 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 20:21:13,323 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 20:21:13,332 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 20:21:13,365 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 20:21:13,371 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 20:21:13,372 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 20:21:13,372 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 20:25:56,227 [Worker-53: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 20:25:56,227 [Worker-53: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 20:25:56,232 [Worker-53: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 20:25:56,261 [Worker-53: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 20:25:56,264 [Worker-53: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 20:25:56,264 [Worker-53: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 20:25:56,264 [Worker-53: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 20:27:09,305 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 20:27:09,306 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 20:27:09,310 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 20:27:09,335 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 20:27:09,337 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 20:27:09,337 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 20:27:09,337 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 20:44:44,410 [Worker-77: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 20:44:44,412 [Worker-77: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 20:44:44,418 [Worker-77: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 20:44:44,446 [Worker-77: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 20:44:44,450 [Worker-77: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 20:44:44,450 [Worker-77: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 20:44:44,450 [Worker-77: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 21:26:08,994 [Worker-83: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 21:26:08,995 [Worker-83: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 21:26:08,998 [Worker-83: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 21:26:09,016 [Worker-83: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 21:26:09,019 [Worker-83: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 21:26:09,019 [Worker-83: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 21:26:09,019 [Worker-83: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 22:04:07,655 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:04:07,657 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:04:07,659 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 22:04:07,719 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 22:04:07,723 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:04:07,723 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:04:07,723 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 22:04:24,352 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:04:24,352 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:04:24,353 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 22:04:24,408 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 22:04:24,463 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:04:24,463 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:04:24,463 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 22:07:04,470 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:07:04,472 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:07:04,475 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 22:07:04,499 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 22:07:04,503 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:07:04,503 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:07:04,503 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 22:07:29,874 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:07:29,875 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:07:29,875 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 22:07:29,893 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 22:07:29,895 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:07:29,896 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:07:29,896 [Worker-97: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 22:08:07,140 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:08:07,141 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:08:07,143 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 22:08:07,164 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 22:08:07,166 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:08:07,166 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:08:07,166 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 22:08:31,809 [Worker-88: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:08:31,809 [Worker-88: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:08:31,810 [Worker-88: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 22:08:31,831 [Worker-88: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 22:08:31,837 [Worker-88: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:08:31,838 [Worker-88: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:08:31,838 [Worker-88: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 22:10:12,847 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:10:12,848 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:10:12,850 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 22:10:12,914 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 22:10:12,926 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:10:12,926 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:10:12,926 [Worker-102: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 22:43:48,230 [Worker-113: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:43:48,232 [Worker-113: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:43:48,235 [Worker-113: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 22:43:48,263 [Worker-113: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 22:43:48,266 [Worker-113: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:43:48,268 [Worker-113: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:43:48,268 [Worker-113: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 22:44:06,607 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:44:06,608 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:44:06,610 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 22:44:06,625 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 22:44:06,631 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:44:06,631 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:44:06,631 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 22:44:17,920 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:44:17,920 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:44:17,921 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 22:44:17,970 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 22:44:17,977 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:44:17,977 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:44:17,977 [Worker-115: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-06 22:44:28,367 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:44:28,368 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:44:28,368 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-06 22:44:28,372 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-06 22:44:28,374 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-06 22:44:28,374 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-06 22:44:28,374 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 07:59:15,239 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-10-07 08:19:51,208 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:19:51,209 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:19:51,214 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 08:19:51,233 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 08:19:51,237 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:19:51,237 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:19:51,237 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 08:20:10,377 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:20:10,378 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:20:10,381 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 08:20:10,413 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 08:20:10,422 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:20:10,422 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:20:10,422 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 08:22:37,207 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:22:37,208 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:22:37,210 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 08:22:37,231 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 08:22:37,236 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:22:37,236 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:22:37,236 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 08:24:07,030 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:24:07,031 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:24:07,034 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 08:24:07,061 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 08:24:07,065 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:24:07,065 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:24:07,065 [Worker-51: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 08:26:39,689 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:26:39,690 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:26:39,692 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 08:26:39,725 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 08:26:39,730 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:26:39,731 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:26:39,731 [Worker-56: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 08:43:01,852 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:43:01,853 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:43:01,857 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 08:43:01,955 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 08:43:01,966 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:43:01,966 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:43:01,966 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 08:43:08,584 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:43:08,585 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:43:08,588 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 08:43:08,613 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 08:43:08,615 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:43:08,615 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:43:08,615 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 08:44:49,579 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:44:49,580 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:44:49,583 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 08:44:49,623 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 08:44:49,648 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:44:49,648 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:44:49,648 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 08:56:09,230 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:56:09,233 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:56:09,237 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 08:56:09,287 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 08:56:09,300 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 08:56:09,301 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 08:56:09,301 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 09:05:17,668 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:05:17,671 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:05:17,674 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 09:05:17,731 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 09:05:17,961 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:05:17,964 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:05:17,965 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 09:07:03,238 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:07:03,241 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:07:03,249 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 09:07:03,292 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 09:07:03,461 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:07:03,475 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:07:03,480 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 09:12:41,438 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:12:41,440 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:12:41,442 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 09:12:41,494 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 09:12:41,596 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:12:41,605 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:12:41,612 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 09:14:01,734 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:14:01,736 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:14:01,738 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 09:14:01,767 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 09:14:01,769 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:14:01,769 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:14:01,769 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 09:14:56,975 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:14:56,976 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:14:56,980 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 09:14:57,024 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 09:14:57,032 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:14:57,095 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:14:57,101 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 09:15:47,704 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:15:47,706 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:15:47,712 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 09:15:47,740 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 09:15:47,756 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:15:47,756 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:15:47,756 [Worker-66: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 09:27:44,781 [Worker-59: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:27:44,786 [Worker-59: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:27:44,791 [Worker-59: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 09:27:44,846 [Worker-59: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 09:27:44,854 [Worker-59: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:27:44,854 [Worker-59: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:27:44,854 [Worker-59: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 09:30:06,400 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:30:06,402 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:30:06,406 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 09:30:06,438 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 09:30:06,445 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:30:06,445 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:30:06,445 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 09:44:44,537 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:44:44,539 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:44:44,542 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 09:44:44,582 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 09:44:44,586 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:44:44,586 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:44:44,586 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 09:56:51,306 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:56:51,309 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:56:51,314 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 09:56:51,342 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 09:56:51,353 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:56:51,354 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:56:51,354 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 09:57:14,385 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:57:14,387 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:57:14,389 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 09:57:14,409 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 09:57:14,413 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:57:14,413 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:57:14,413 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 09:58:30,537 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:58:30,541 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:58:30,545 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 09:58:30,689 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 09:58:30,751 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 09:58:30,752 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 09:58:30,752 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 10:00:11,290 [Worker-78: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:00:11,291 [Worker-78: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:00:11,293 [Worker-78: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 10:00:11,320 [Worker-78: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 10:00:11,329 [Worker-78: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:00:11,330 [Worker-78: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:00:11,330 [Worker-78: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 10:15:41,477 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:15:41,480 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:15:41,483 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 10:15:41,517 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 10:15:41,523 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:15:41,523 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:15:41,523 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 10:19:18,047 [Worker-106: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:19:18,049 [Worker-106: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:19:18,052 [Worker-106: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 10:19:18,100 [Worker-106: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 10:19:18,110 [Worker-106: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:19:18,110 [Worker-106: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:19:18,110 [Worker-106: Launching RestaurantApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 10:27:11,671 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:27:11,673 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:27:11,676 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 10:27:11,739 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 10:27:11,744 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:27:11,744 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:27:11,744 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 10:29:41,080 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:29:41,083 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:29:41,086 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 10:29:41,121 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 10:29:41,126 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:29:41,126 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:29:41,126 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 10:45:10,640 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:45:10,643 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:45:10,647 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 10:45:10,684 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 10:45:10,692 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:45:10,693 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:45:10,693 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 10:55:58,345 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:55:58,348 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:55:58,351 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 10:55:58,378 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 10:55:58,387 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 10:55:58,388 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 10:55:58,388 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 11:02:41,004 [Worker-134: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 11:02:41,007 [Worker-134: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 11:02:41,011 [Worker-134: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 11:02:41,027 [Worker-134: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 11:02:41,029 [Worker-134: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 11:02:41,030 [Worker-134: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 11:02:41,030 [Worker-134: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
+2021-10-07 11:27:29,754 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 11:27:29,759 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 11:27:29,770 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-07 11:27:29,843 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-07 11:27:29,854 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-07 11:27:29,854 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-07 11:27:29,854 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/adnannmuratovic/eclipse-workspace/CreateApi/restaurant/src/test/resources
