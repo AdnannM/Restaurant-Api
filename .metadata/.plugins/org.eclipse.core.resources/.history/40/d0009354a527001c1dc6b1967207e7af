@@ -1,0 +1,11 @@
+package com.adnannmuratovic;
+
+import javax.persistence.Entity;
+
+@Entity
+@Table(name = "restaurant")
+public class RestaurantAddressDAO {
+
+	
+	
+}

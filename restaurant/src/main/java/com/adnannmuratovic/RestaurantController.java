@@ -23,7 +23,7 @@ public class RestaurantController {
 
 	
 	@GetMapping
-	public ResponseEntity<Collection<Restaurant>> getRestaurant() {
+	public ResponseEntity<Collection<RestaurantDAO>> getRestaurant() {
 		
 		return new ResponseEntity<>(empService.getRestaurant(), HttpStatus.OK);
 	}

@@ -1,0 +1,5 @@
+package com.adnannmuratovic;
+
+public interface RestaurantLocationRepository {
+
+}

@@ -1,18 +1,29 @@
 package com.adnannmuratovic;
 
+import java.util.List;
+
 public class RestaurantDTO {
 	
 	private Integer id;
 	private String restaurantName;
-	private String address;
-	private String phoneNumber;
-	private double lat;
-	private double log;
 	private String restaurantImageURL;
-	private String webSite;
+
 	private RestaurantTypeDTO type;
+	private List<RestaurantLocationDTO> location;
+	private List<RestaurantContactDTO> contact;
 	
-	
+	public List<RestaurantLocationDTO> getLocation() {
+		return location;
+	}
+	public void setLocation(List<RestaurantLocationDTO> location) {
+		this.location = location;
+	}
+	public List<RestaurantContactDTO> getContact() {
+		return contact;
+	}
+	public void setContact(List<RestaurantContactDTO> contact) {
+		this.contact = contact;
+	}
 	public RestaurantDTO() {
 		
 	}
@@ -28,42 +39,14 @@ public class RestaurantDTO {
 	public void setRestaurantName(String restaurantName) {
 		this.restaurantName = restaurantName;
 	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	public String getPhoneNumber() {
-		return phoneNumber;
-	}
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
-	}
-	public double getLat() {
-		return lat;
-	}
-	public void setLat(double lat) {
-		this.lat = lat;
-	}
-	public double getLog() {
-		return log;
-	}
-	public void setLog(double log) {
-		this.log = log;
-	}
+	
 	public String getRestaurantImageURL() {
 		return restaurantImageURL;
 	}
 	public void setRestaurantImageURL(String restaurantImageURL) {
 		this.restaurantImageURL = restaurantImageURL;
 	}
-	public String getWebSite() {
-		return webSite;
-	}
-	public void setWebSite(String webSite) {
-		this.webSite = webSite;
-	}
+	
 	public RestaurantTypeDTO getType() {
 		return type;
 	}

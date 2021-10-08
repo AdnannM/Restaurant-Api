@@ -8,8 +8,8 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface RestaurantRepository extends JpaRepository<Restaurant, Integer>{
+public interface RestaurantRepository extends JpaRepository<RestaurantDAO, Integer>{
 
 	@Query(value = "select * from restaurant where restaurant_name = :restaurantName", nativeQuery = true)
-	Optional<Restaurant> getRestaurantWithName(String restaurantName);
+	Optional<RestaurantDAO> getRestaurantWithName(String restaurantName);
 }

@@ -1,0 +1,103 @@
+package com.adnannmuratovic;
+
+import java.util.Objects;
+import java.util.Set;
+import java.util.UUID;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "restaurantContact")
+public class RestaurantContactDAO {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+	private UUID uniqueKey;
+	@Column(name = "id")
+	private Integer id;
+	@Column(name = "email")
+	private String email;
+	@Column(name = "phoneNumber")
+	private String phoneNumber;
+	@Column(name = "webSite")
+	private String webSite;
+	
+	@OneToMany(mappedBy = "restaurant_id")
+	private RestaurantDAO restaurantDAO;
+	
+	
+	public RestaurantContactDAO() {
+		
+	}
+	
+	public RestaurantContactDAO(Integer id, String email, String phoneNumber, String webSite, RestaurantDAO restaurantDAO) {
+		this.id = id;
+		this.email = email;
+		this.phoneNumber = phoneNumber;
+		this.webSite = webSite;
+		this.restaurantDAO = restaurantDAO;
+	}
+	
+	public UUID getUniqueKey() {
+		return uniqueKey;
+	}
+	public void setUniqueKey(UUID uniqueKey) {
+		this.uniqueKey = uniqueKey;
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	public String getWebSite() {
+		return webSite;
+	}
+	public void setWebSite(String webSite) {
+		this.webSite = webSite;
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(email, id, phoneNumber, uniqueKey, webSite);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		RestaurantContactDAO other = (RestaurantContactDAO) obj;
+		return Objects.equals(email, other.email) && Objects.equals(id, other.id)
+				&& Objects.equals(phoneNumber, other.phoneNumber) && Objects.equals(uniqueKey, other.uniqueKey)
+				&& Objects.equals(webSite, other.webSite);
+	}
+	@Override
+	public String toString() {
+		return "RestaurantContactDAO [uniqueKey=" + uniqueKey + ", id=" + id + ", email=" + email + ", phoneNumber="
+				+ phoneNumber + ", webSite=" + webSite + "]";
+	}
+	
+	
+}

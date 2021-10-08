@@ -23,7 +23,7 @@ public class RestaurantTypeDAO {
 	
 	
 	@OneToOne(mappedBy = "type")
-	private Restaurant restaurant;
+	private RestaurantDAO restaurantDAO;
 	
 	public RestaurantTypeDAO() {}	
 	public Integer getId() {

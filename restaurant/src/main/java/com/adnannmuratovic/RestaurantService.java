@@ -8,11 +8,11 @@ public interface RestaurantService {
 
 	List <RestaurantDTO> getAllRestaurant();
 
-	Collection <Restaurant> getRestaurant();
+	Collection <RestaurantDAO> getRestaurant();
 	
 	RestaurantDTO createRestaurant(RestaurantDTO restaurant);
 	
-	Restaurant getRestaurant(String id);
+	RestaurantDAO getRestaurant(String id);
 	
 	RestaurantDTO updateRestaurant(Integer id, RestaurantDTO restaurant);
 
