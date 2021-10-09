@@ -68,9 +68,6 @@ public class RestaurantServiceImpl implements RestaurantService {
 			  resultList.add((RestaurantDTO) newRestaurantDTO);
 		  }
 		  
-		  
-		  // DTO Contact
-		  
 		  return resultList;
 	  }
 
@@ -87,8 +84,6 @@ public class RestaurantServiceImpl implements RestaurantService {
 			}
 			 restaurantRepository.deleteById(id);
         } 
-		
-		// Delete by Location
 		
 	}
 	

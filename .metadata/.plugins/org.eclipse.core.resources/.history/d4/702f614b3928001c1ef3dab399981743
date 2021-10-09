@@ -46,8 +46,8 @@ public class RestaurantServiceImpl implements RestaurantService {
 			  newRestaurantDTO.setRestaurantName(restaurantDAO.getRestaurantName());
 			  newRestaurantDTO.setRestaurantImageURL(restaurantDAO.getRestaurantImageURL());
 			  
-			  RestaurantTypeDTO dtoType = newRestaurantDTO.getType();
-			  dtoType.setId(newRestaurantDTO.getId());
+//			  RestaurantTypeDTO dtoType = newRestaurantDTO.getType();
+//			  dtoType.setId(newRestaurantDTO.getId());
 			  
 			  
 			  //List<RestaurantLocationDAO> locationList = restaurantLocationRepository.findAll();
@@ -68,9 +68,6 @@ public class RestaurantServiceImpl implements RestaurantService {
 			  resultList.add((RestaurantDTO) newRestaurantDTO);
 		  }
 		  
-		  
-		  // DTO Contact
-		  
 		  return resultList;
 	  }
 
@@ -87,8 +84,6 @@ public class RestaurantServiceImpl implements RestaurantService {
 			}
 			 restaurantRepository.deleteById(id);
         } 
-		
-		// Delete by Location
 		
 	}
 	
